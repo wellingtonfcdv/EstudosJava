@@ -20,7 +20,7 @@ public class ExceptionsBasics {
     // Exceção Não checável
     private static int dividirNovo(int i, int j){
         if(j == 0)
-            throw new IllegalArgumentException("Não é possível realizar divisão por zero!");
+            throw new DivisaoPorZero("Não é possível realizar divisão por zero!");
 
         return i / j;
     }
