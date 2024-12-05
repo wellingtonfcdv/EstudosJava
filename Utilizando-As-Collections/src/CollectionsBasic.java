@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CollectionsBasic {
@@ -23,14 +24,20 @@ public class CollectionsBasic {
 
         // Insert // Update
         nomesArrayList.set(0, "0");
-        nomesArrayList.set(1, "1");
+        nomesArrayList.set(1, "3");
         nomesArrayList.set(2, "2");
-        nomesArrayList.set(3, "7");
+        nomesArrayList.set(3, "1");
         System.out.println(nomesArrayList);
         
         // Delete
-        nomesArrayList.remove(0);
-        System.out.println(nomesArrayList);
+        //nomesArrayList.remove(0);
+        //System.out.println(nomesArrayList);
+
+        // Sort - ordenação no ArrayList
+        Collections.sort(nomesArrayList);
+        System.out.println("Lista Ordenada " + nomesArrayList);
+
+
 
     }
 }
