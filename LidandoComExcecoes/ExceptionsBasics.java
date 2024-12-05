@@ -14,7 +14,7 @@ public class ExceptionsBasics {
         System.out.println(nomes.get(0));
         try{
             System.out.println(nomes.get(1));
-        }catch(Exception ex){
+        }catch(IndexOutOfBoundsException ex){
             //ex.printStackTrace();
             System.out.println("O índice informado não é válido!");
         }
