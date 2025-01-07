@@ -20,5 +20,14 @@ public class VetorTeste {
         Aluno x = lista.pega(1);
         System.out.println(x);
 
+        lista.remove(1);
+        System.out.println(lista);
+
+        for (int i = 0; i < 300; i++) {
+            Aluno y = new Aluno("joão" + i);
+            lista.adiciona(y);
+        }
+        System.out.println(lista);
+
     }
 }
