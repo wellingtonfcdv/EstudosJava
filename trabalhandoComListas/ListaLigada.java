@@ -1,17 +1,21 @@
 public class ListaLigada {
-    public void adicionaNoComeco(Object elemento){}
+    private Celula primeira = null;
+    private int totalDeElementos = 0;
+
+
+    public void adicionaNoComeco(Object elemento){
+        Celula nova = new Celula(elemento,primeira);
+        this.primeira = nova;
+        this.totalDeElementos++;
+    }
 
     public void adiciona(Object elemento){}
 
     public void adiciona(int posicao, Object elemento){}
 
-    public Object pega(int posicao){
-        return null;
-    }
+    public Object pega(int posicao){return null; }
 
-    public void remove(int posicao){
-
-    }
+    public void remove(int posicao){ }
 
     public int tamanho(){return 0;}
 
