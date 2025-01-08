@@ -26,7 +26,13 @@ public class ListaLigada {
 
     }
 
-    public void adiciona(int posicao, Object elemento){}
+    //O elemento da esquerda deve apontar para o novo, e este para o da direita.
+    public void adiciona(int posicao, Object elemento){
+        Celula anterior = this.pegaCelula(posicao -1);
+        Celula nova = new Celula(elemento, anterior.getProximo());
+        anterior.setProximo(nova);
+        this.totalDeElementos++;
+    }
 
     public Object pega(int posicao){return null; }
 
