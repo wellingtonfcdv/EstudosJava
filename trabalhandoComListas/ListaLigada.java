@@ -20,4 +20,24 @@ public class ListaLigada {
     public int tamanho(){return 0;}
 
     public boolean contem(Object o){return false;}
+
+    @Override
+    public String toString() {
+        if (this.totalDeElementos == 0){
+            return "[]";
+        }
+        Celula atual = primeira;
+
+        StringBuilder builder = new StringBuilder("[");
+
+        for (int i = 0; i < totalDeElementos; i++) {
+            builder.append(atual.getElemento());
+            builder.append(",");
+
+            atual = atual.getProximo();
+        }
+        builder.append("]");
+
+        return builder.toString();
+    }
 }
