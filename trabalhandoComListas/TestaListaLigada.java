@@ -9,5 +9,8 @@ public class TestaListaLigada {
         System.out.println(lista);
         lista.adicionaNoComeco("Guilherme");
         System.out.println(lista);
+
+        lista.adiciona("José");
+        System.out.println(lista);
     }
 }
