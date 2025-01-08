@@ -14,7 +14,12 @@ public class ListaLigada {
         this.totalDeElementos++;
     }
 
-    public void adiciona(Object elemento){}
+    public void adiciona(Object elemento){
+        Celula nova = new Celula(elemento, null);
+        this.ultima.setProximo(nova);
+        this.ultima = nova;
+        this.totalDeElementos++;
+    }
 
     public void adiciona(int posicao, Object elemento){}
 
