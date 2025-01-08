@@ -1,11 +1,16 @@
 public class ListaLigada {
     private Celula primeira = null;
+    private Celula ultima = null;
     private int totalDeElementos = 0;
 
 
     public void adicionaNoComeco(Object elemento){
         Celula nova = new Celula(elemento,primeira);
         this.primeira = nova;
+
+        if(this.totalDeElementos == 0){
+            this.ultima = this.primeira;
+        }
         this.totalDeElementos++;
     }
 
