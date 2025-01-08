@@ -55,4 +55,21 @@ public class ListaLigada {
 
         return builder.toString();
     }
+    // método para verificar quando a posição estiver ocupada
+    private boolean posicaoOcupada(int posicao){
+        return posicao >= 0 && posicao < this.totalDeElementos;
+    }
+
+    // método que irá apontar para a célula na qual queremos inserir o elemento
+    private Celula pegaCelula(int posicao){
+        if (!posicaoOcupada(posicao)){
+            throw new IllegalArgumentException("Posição Inexistente.");
+        }
+        Celula atual = primeira;
+
+        for (int i = 0; i < posicao; i++) {
+            atual = atual.getProximo();
+        }
+        return atual;
+    }
 }
