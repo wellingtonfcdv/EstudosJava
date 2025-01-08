@@ -45,7 +45,9 @@ public class ListaLigada {
 
     public void remove(int posicao){ }
 
-    public int tamanho(){return 0;}
+    public int tamanho(){
+        return this.totalDeElementos;
+    }
 
     public boolean contem(Object o){return false;}
 
