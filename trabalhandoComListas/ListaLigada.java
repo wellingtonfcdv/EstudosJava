@@ -26,7 +26,11 @@ public class ListaLigada {
 
     }
 
-    //O elemento da esquerda deve apontar para o novo, e este para o da direita.
+    /*
+        O elemento da esquerda deve apontar para o novo, e este para o da direita.
+        Dessa forma pegamos a Célula da esquerda (anterior) e a nova no lugar da próxima (anterior.getProximo).
+        Por fim, basta fazer com que a anterior seja a nova e somar 1 no total de elementos
+    * */
     public void adiciona(int posicao, Object elemento){
         Celula anterior = this.pegaCelula(posicao -1);
         Celula nova = new Celula(elemento, anterior.getProximo());
