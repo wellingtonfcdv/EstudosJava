@@ -5,11 +5,15 @@ public class ListaLigada {
 
 
     public void adicionaNoComeco(Object elemento){
-        Celula nova = new Celula(elemento,primeira);
-        this.primeira = nova;
+
 
         if(this.totalDeElementos == 0){
+            Celula nova = new Celula(elemento);
+            this.primeira = nova;
             this.ultima = this.primeira;
+        }else{
+            Celula nova = new Celula(this.primeira,elemento);
+            this.primeira.setAnterior(nova);
         }
         this.totalDeElementos++;
     }
@@ -18,8 +22,9 @@ public class ListaLigada {
         if(this.totalDeElementos == 0){
             adicionaNoComeco(elemento);
         }else{
-            Celula nova = new Celula(elemento, null);
+            Celula nova = new Celula(elemento);
             this.ultima.setProximo(nova);
+            nova.setAnterior(this.ultima);
             this.ultima = nova;
             this.totalDeElementos++;
         }
