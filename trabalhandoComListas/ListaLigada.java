@@ -38,7 +38,10 @@ public class ListaLigada {
         this.totalDeElementos++;
     }
 
-    public Object pega(int posicao){return null; }
+    public Object pega(int posicao){
+
+        return this.pegaCelula(posicao).getElemento();
+    }
 
     public void remove(int posicao){ }
 

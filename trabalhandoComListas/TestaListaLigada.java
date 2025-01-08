@@ -15,5 +15,8 @@ public class TestaListaLigada {
 
         lista.adiciona(2,"Gabriel");
         System.out.println(lista);
+
+        Object x = lista.pega(2);
+        System.out.println(x);
     }
 }
