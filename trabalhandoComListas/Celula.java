@@ -8,9 +8,6 @@ public class Celula {
         this.proximo = proximo;
     }
 
-    public Celula(Object elemento) {
-        this.elemento = elemento;
-    }
 
     public Object getElemento() {
         return elemento;
