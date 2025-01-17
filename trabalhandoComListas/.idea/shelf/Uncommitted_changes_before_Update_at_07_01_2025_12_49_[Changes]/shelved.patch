@@ -1,0 +1,304 @@
+Index: ../src/ComparandoNumeros.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/ComparandoNumeros.java b/../src/ComparandoNumeros.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/ComparandoNumeros.java	(date 1736264839909)
+@@ -0,0 +1,29 @@
++import java.util.Scanner;
++/*
++* 2. Peça ao usuário para inserir dois números inteiros. Compare os números e imprima uma mensagem indicando
++* se são iguais, diferentes, o primeiro é maior ou o segundo é maior.*/
++
++public class ComparandoNumeros {
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++
++        int numero1 = 0;
++        int numero2 = 0;
++
++        System.out.println("Informe o número 1: ");
++        numero1 = scanner.nextInt();
++
++        System.out.println("Informe o número 2: ");
++        numero2 = scanner.nextInt();
++
++        if (numero1 > numero2){
++            System.out.println("O número " + numero1 + " é maior que o número " + numero2);
++        } else if (numero2 > numero1) {
++            System.out.println("O número " + numero2 + " é maior que o número " + numero1);
++        } else if (numero1 == numero2) {
++            System.out.println("Os números são iguais. Número1: " + numero1 + " Número2 " + numero2);
++        }else {
++            System.out.println("Número informado inválido!");
++        }
++    }
++}
+Index: ../src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/Main.java b/../src/Main.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/Main.java	(date 1736264839909)
+@@ -0,0 +1,20 @@
++import java.util.Scanner;
++
++public class Main {
++    public static void main(String[] args) {
++        /*
++        * 1. Crie um programa que solicite ao usuário digitar um número. Se o número for positivo, exiba
++        * "Número positivo", caso contrário, exiba "Número negativo".*/
++        Scanner scanner = new Scanner(System.in);
++        int numero = 0;
++
++        System.out.println("Informe um número inteiro: ");
++        numero = scanner.nextInt();
++
++        if (numero > 0){
++            System.out.println("Número positivo");
++        }else {
++            System.out.println("Número negativo");
++        }
++    }
++}
+\ No newline at end of file
+Index: ../.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1736264839899)
++++ b/../.idea/misc.xml	(date 1736264839899)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/modules.xml b/../.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1736264839899)
++++ b/../.idea/modules.xml	(date 1736264839899)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/controlandoFluxoDesafios.iml" filepath="$PROJECT_DIR$/controlandoFluxoDesafios.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../src/Tabuada.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/Tabuada.java b/../src/Tabuada.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/Tabuada.java	(date 1736264839909)
+@@ -0,0 +1,16 @@
++import java.util.Scanner;
++
++public class Tabuada {
++    /*4.Crie um programa que solicite ao usuário um número e exiba a tabuada desse número de 1 a 10.*/
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int numero = 0;
++
++        System.out.println("Informe um número: ");
++        numero = scanner.nextInt();
++
++        for (int i = 0; i <= 10; i++) {
++            System.out.println(numero +" x "+ i + " = " + (numero*i));
++        }
++    }
++}
+Index: ../src/Fatorial.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/Fatorial.java b/../src/Fatorial.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/Fatorial.java	(date 1736264839909)
+@@ -0,0 +1,19 @@
++import java.util.Scanner;
++
++public class Fatorial {
++    /*6. Crie um programa que solicite ao usuário um número e calcule o fatorial desse número.*/
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int numero = 0;
++        int fatorial = 1;
++
++        System.out.println("Informe um número: ");
++        numero = scanner.nextInt();
++
++        for (int i = 1; i <= numero; i++) {
++            fatorial *= i;
++
++        }
++        System.out.println("O fatorial de  " + numero + " é: " + fatorial);
++    }
++}
+Index: ../controlandoFluxoDesafios.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../controlandoFluxoDesafios.iml b/../controlandoFluxoDesafios.iml
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../controlandoFluxoDesafios.iml	(date 1736264839909)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/.metadata/\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.gitignore b/../.gitignore
+--- a/../.gitignore	(revision 614454794549e039ec164e461e24595157241898)
++++ b/../.gitignore	(date 1736264910407)
+@@ -1,1 +1,0 @@
+-/.metadata/
+Index: ../src/CalcularArea.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/CalcularArea.java b/../src/CalcularArea.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/CalcularArea.java	(date 1736264839909)
+@@ -0,0 +1,40 @@
++import java.util.Scanner;
++
++public class CalcularArea {
++    /*3.Crie um menu que oferece duas opções ao usuário: "1. Calcular área do quadrado" e "2. Calcular área do círculo".
++    Solicite a escolha do usuário e realize o cálculo da área com base na opção selecionada.*/
++
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int opcao = 0;
++        double areaQuadrado = 0;
++        double ladoQuadrado = 0;
++
++
++        System.out.println("---- MENU ----");
++        System.out.println("Escolha uma das opções: ");
++        System.out.println("1. Calcular área do quadrado");
++        System.out.println("2. Calcular área do círculo");
++        System.out.println("3. Sair");
++
++        opcao = scanner.nextInt();
++        while (true){
++            if (opcao == 1){
++                System.out.println("Informe a media de um dos lados do quadrado: ");
++                ladoQuadrado = scanner.nextDouble();
++                areaQuadrado = ladoQuadrado * ladoQuadrado;
++                System.out.printf("A área do quadrado informado é " + areaQuadrado);
++            } else if (opcao == 2) {
++                System.out.println("Informe o raio do círculo: ");
++                double  raio = scanner.nextDouble();
++                double areaCirculo = 3.14 * raio * raio;
++                System.out.printf("Área do círculo: " + areaCirculo);
++            }if (opcao == 3){
++                System.out.println("Saindo do sistema...");
++                break;
++            }
++        }
++
++
++    }
++}
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1736264839899)
++++ b/../.idea/vcs.xml	(date 1736264839899)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/.gitignore b/../.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1736264839899)
++++ b/../.idea/.gitignore	(date 1736264839899)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: ../src/NumeroParImpar.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../src/NumeroParImpar.java b/../src/NumeroParImpar.java
+new file mode 100644
+--- /dev/null	(date 1736264839909)
++++ b/../src/NumeroParImpar.java	(date 1736264839909)
+@@ -0,0 +1,19 @@
++import java.util.Scanner;
++
++public class NumeroParImpar {
++    /*4.Crie um programa que solicite ao usuário a entrada de um número inteiro.
++    Verifique se o número é par ou ímpar e exiba uma mensagem correspondente.*/
++    public static void main(String[] args) {
++        Scanner scanner = new Scanner(System.in);
++        int numero = 0;
++
++        System.out.printf("Informe um número: ");
++        numero = scanner.nextInt();
++
++        if (numero % 2 == 0){
++            System.out.println("Número informado é par. " + numero);
++        }else {
++            System.out.println("Número informado é ímpar. " + numero);
++        }
++    }
++}

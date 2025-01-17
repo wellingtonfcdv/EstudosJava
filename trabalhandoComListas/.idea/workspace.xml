@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="51a1a45f-2255-44f2-b2bd-3649287f167f" name="Changes" comment="Readequação dos métodos" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2rJ2NNosuaPmlkWxUKghc48CdIy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TestaListaLigada.executor": "Run",
+    "Application.VetorTeste.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Dev",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.TestaListaLigada">
+    <configuration name="TestaListaLigada" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestaListaLigada" />
+      <module name="trabalhandoComListas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VetorTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VetorTeste" />
+      <module name="trabalhandoComListas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestaListaLigada" />
+        <item itemvalue="Application.VetorTeste" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51a1a45f-2255-44f2-b2bd-3649287f167f" name="Changes" comment="" />
+      <created>1736262821188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736262821188</updated>
+    </task>
+    <task id="LOCAL-00001" summary="melhorias no processo dos métodos e vetor">
+      <option name="closed" value="true" />
+      <created>1736275386381</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736275386381</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Criação da classe Celula">
+      <option name="closed" value="true" />
+      <created>1736276389115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736276389115</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Criação classe ListaLigada">
+      <option name="closed" value="true" />
+      <created>1736276692629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736276692629</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Criação classe para teste">
+      <option name="closed" value="true" />
+      <created>1736278316381</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736278316381</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajustes dos métodos para realizar o teste">
+      <option name="closed" value="true" />
+      <created>1736278348138</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736278348138</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Criando o toString para um retorno amigável">
+      <option name="closed" value="true" />
+      <created>1736336541630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736336541630</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Ajuste metodo adicionaNoComeco">
+      <option name="closed" value="true" />
+      <created>1736337262189</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736337262189</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implementação metodo adiciona, para adicionar no final da fila">
+      <option name="closed" value="true" />
+      <created>1736337945485</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736337945485</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Ajuste para quando a lista estiver vazia.">
+      <option name="closed" value="true" />
+      <created>1736338411380</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736338411380</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chamada do método adiciona, para adicionar no final da lista">
+      <option name="closed" value="true" />
+      <created>1736338724874</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736338724874</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ajuste método adiciona, validando a lista se está vazia">
+      <option name="closed" value="true" />
+      <created>1736338807657</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1736338807657</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Criação dos métodos posicaoOcupada para verificar posição ocupada e método pegaCelula para apontar qual célula inserir">
+      <option name="closed" value="true" />
+      <created>1736341576827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1736341576827</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Ajuste do método adiciona, de modo que o elemento da esquerda deve apontar para o novo, e este para o da direita">
+      <option name="closed" value="true" />
+      <created>1736342681411</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736342681411</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Ajuste no método adiciona, para adicionar o nome no meio">
+      <option name="closed" value="true" />
+      <created>1736360447518</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1736360447518</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Ajuste do método pega, para informar a posição e ter o valor de retorno da posição">
+      <option name="closed" value="true" />
+      <created>1736360604998</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1736360604998</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Ajuste no método tamanho para retornar o tamanho da lista">
+      <option name="closed" value="true" />
+      <created>1736360828285</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736360828285</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Criação do método removeDoComeco">
+      <option name="closed" value="true" />
+      <created>1736361472103</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736361472103</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Chamada do método removeDoComeco">
+      <option name="closed" value="true" />
+      <created>1736361627365</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1736361627365</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Criação do parâmetro elemento e seu construtor">
+      <option name="closed" value="true" />
+      <created>1736362325606</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1736362325606</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Readequação dos métodos adiciona e adicionaNoComeco">
+      <option name="closed" value="true" />
+      <created>1736363172085</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1736363172085</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Readequação dos métodos">
+      <option name="closed" value="true" />
+      <created>1736421476294</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1736421476294</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="melhorias no processo dos métodos e vetor" />
+    <MESSAGE value="Criação da classe Celula" />
+    <MESSAGE value="Criação classe ListaLigada" />
+    <MESSAGE value="Criação classe para teste" />
+    <MESSAGE value="Ajustes dos métodos para realizar o teste" />
+    <MESSAGE value="Criando o toString para um retorno amigável" />
+    <MESSAGE value="Ajuste metodo adicionaNoComeco" />
+    <MESSAGE value="Implementação metodo adiciona, para adicionar no final da fila" />
+    <MESSAGE value="Ajuste para quando a lista estiver vazia." />
+    <MESSAGE value="chamada do método adiciona, para adicionar no final da lista" />
+    <MESSAGE value="Ajuste método adiciona, validando a lista se está vazia" />
+    <MESSAGE value="Criação dos métodos posicaoOcupada para verificar posição ocupada e método pegaCelula para apontar qual célula inserir" />
+    <MESSAGE value="Ajuste do método adiciona, de modo que o elemento da esquerda deve apontar para o novo, e este para o da direita" />
+    <MESSAGE value="Ajuste no método adiciona, para adicionar o nome no meio" />
+    <MESSAGE value="Ajuste do método pega, para informar a posição e ter o valor de retorno da posição" />
+    <MESSAGE value="Ajuste no método tamanho para retornar o tamanho da lista" />
+    <MESSAGE value="Criação do método removeDoComeco" />
+    <MESSAGE value="Chamada do método removeDoComeco" />
+    <MESSAGE value="Criação do parâmetro elemento e seu construtor" />
+    <MESSAGE value="Readequação dos métodos adiciona e adicionaNoComeco" />
+    <MESSAGE value="Readequação dos métodos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readequação dos métodos" />
+  </component>
+</project>
