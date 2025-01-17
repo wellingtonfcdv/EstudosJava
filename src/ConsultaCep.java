@@ -1,31 +1,44 @@
 import com.google.gson.Gson;
 
 import java.io.IOException;
-import java.net.URI;
+import java.net.*;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaCep {
 
+
     public Endereco buscaEndereco(String cep) {
 
-        String endereco = "https://viacep.com.br/ws/" + cep + "/json";
+        //Credenciais do proxy
+        String username="do-user";
+        String password="1234";
 
-        HttpClient client = HttpClient.newHttpClient();
+        String endereco = "http://viacep.com.br/ws/" + cep + "/json";
+
+        //Configuração do cliente com proxy
+        HttpClient client = HttpClient.newBuilder()
+                .proxy(ProxySelector.of(new InetSocketAddress("10.26.0.159",8080)))
+                .authenticator(new Authenticator() {
+                    @Override
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password.toCharArray());
+                    }
+                })
+                .build();
 
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
                 .build();
 
-        HttpResponse<String> response;
+        HttpResponse<String> response = null;
         try {
-            response = HttpClient
-                    .newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+            response = client
+                    .send(request, HttpResponse.BodyHandlers.ofString());
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException("Não consegui obter o endereço a partir desse Cep. " + e);
         }
-
         return new Gson().fromJson(response.body(),Endereco.class);
     }
 }
