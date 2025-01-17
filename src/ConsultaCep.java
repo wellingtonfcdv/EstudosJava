@@ -32,13 +32,14 @@ public class ConsultaCep {
                 .uri(URI.create(endereco))
                 .build();
 
-        HttpResponse<String> response = null;
         try {
-            response = client
+            HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
+            return new Gson().fromJson(response.body(),Endereco.class);
         } catch (IOException | InterruptedException e) {
             throw new RuntimeException("Não consegui obter o endereço a partir desse Cep. " + e);
         }
-        return new Gson().fromJson(response.body(),Endereco.class);
+
     }
+
 }

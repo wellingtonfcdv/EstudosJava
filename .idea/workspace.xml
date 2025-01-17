@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ae4d0ca-04d0-4acb-8ceb-4d5acbba8d09" name="Changes" comment="Implementação da classe consultacep e utilização do Gson">
+    <list default="true" id="5ae4d0ca-04d0-4acb-8ceb-4d5acbba8d09" name="Changes" comment="Ajuste conexão com proxy para realizar a chamada da api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConsultaCep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsultaCep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +78,20 @@
       <option name="project" value="LOCAL" />
       <updated>1737140301411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajuste conexão com proxy para realizar a chamada da api">
+      <option name="closed" value="true" />
+      <created>1737141651511</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737141651511</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementação da classe consultacep e utilização do Gson" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação da classe consultacep e utilização do Gson" />
+    <MESSAGE value="Ajuste conexão com proxy para realizar a chamada da api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajuste conexão com proxy para realizar a chamada da api" />
   </component>
 </project>
