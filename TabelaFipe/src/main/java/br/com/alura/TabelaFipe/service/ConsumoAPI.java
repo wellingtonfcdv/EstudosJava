@@ -7,7 +7,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsumoAPI {
-    public String obterDados(String endereco){
+    public String obterDados(String endereco) throws MalformedURLException {
         //Credenciais do proxy
         String username="do-user";
         String password="1234";
@@ -23,10 +23,12 @@ public class ConsumoAPI {
                 })
                 .build();
 
+
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(endereco))
                 .build();
         HttpResponse<String> response = null;
+
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
