@@ -5,5 +5,16 @@ public class CriarConta {
 		Conta primeiraConta = new Conta();
 		primeiraConta.saldo = 200;
 		System.out.println(primeiraConta.saldo);
+		
+		primeiraConta.saldo += 100;
+		System.out.println(primeiraConta);
+		
+		Conta segundaConta = new Conta();
+		segundaConta.saldo = 50;
+		
+		System.out.println("Segunda conta " + segundaConta.saldo);
+		System.out.println("Segunda conta " + primeiraConta.saldo);
+		
+		
 	}
 }
