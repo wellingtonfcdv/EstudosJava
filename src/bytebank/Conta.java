@@ -8,6 +8,6 @@ public class Conta { //Atributos
 	
 	//Comportamentos -> métodos
 	void deposita(double valor) {
-		
+		this.saldo = this.saldo + valor;
 	}
 }
