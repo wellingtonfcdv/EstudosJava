@@ -13,7 +13,7 @@ public class CriarConta {
 		segundaConta.saldo = 50;
 		
 		System.out.println("Segunda conta " + segundaConta.saldo);
-		System.out.println("Segunda conta " + primeiraConta.saldo);
+		System.out.println("Primeira conta " + primeiraConta.saldo);
 		
 		
 	}
