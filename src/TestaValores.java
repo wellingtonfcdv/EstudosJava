@@ -1,10 +1,7 @@
 
 public class TestaValores {
 public static void main(String[] args) {
-	Conta conta = new Conta();
-	
-	conta.setAgencia(-50);
-	conta.setNumero(-300);
+	Conta conta = new Conta(1337,2442);
 	
 	System.out.println(conta.getAgencia());
 }

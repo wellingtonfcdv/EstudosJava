@@ -8,7 +8,9 @@ public class Conta { //Atributos
 	
 	//construtor
 	public Conta(int agencia, int numero) {
-		
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("Estou criando uma nova conta..." + this.numero);
 	}
 	
 	
