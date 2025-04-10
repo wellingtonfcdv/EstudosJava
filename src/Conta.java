@@ -1,9 +1,9 @@
 
 public class Conta { //Atributos
 	private double saldo;
-	int agencia;
-	int numero;
-	Cliente titular;
+	private int agencia;
+	private int numero;
+	private Cliente titular;
 	
 	//Comportamentos -> métodos
 	void deposita(double valor) {
@@ -30,6 +30,22 @@ public class Conta { //Atributos
 	
 	public double getSaldo() {
 		return this.saldo;
+	}
+	
+	public int getNumero() {
+		return this.numero;
+	}
+	
+	public void setNumero(int numero){//Encapsulamento
+		this.numero = numero;
+	}
+	
+	public int getAgencia() {
+		return this.agencia;
+	}
+	
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
 	}
 }
 
