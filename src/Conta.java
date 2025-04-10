@@ -5,11 +5,20 @@ public class Conta { //Atributos
 	private int numero;
 	private Cliente titular;
 	
+	
+	//construtor
+	public Conta() {
+		
+	}
+	
+	
 	//Comportamentos -> métodos
 	void deposita(double valor) {
 		this.saldo = this.saldo + valor;
 	}
 	
+	
+
 	public boolean saca(double valor){
 		if(this.saldo >= valor) {
 			this.saldo -= valor;
@@ -37,15 +46,34 @@ public class Conta { //Atributos
 	}
 	
 	public void setNumero(int numero){//Encapsulamento
+		
+		if(numero <= 0) {
+			System.out.println("Não pode valor menor igual a 0");
+			return;
+		}
 		this.numero = numero;
 	}
 	
 	public int getAgencia() {
+		
 		return this.agencia;
 	}
 	
 	public void setAgencia(int agencia) {
+		if(agencia <= 0) {
+			System.out.println("Não pode valor menor igual a 0");
+			return;
+		}
+		
 		this.agencia = agencia;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
 	}
 }
 
