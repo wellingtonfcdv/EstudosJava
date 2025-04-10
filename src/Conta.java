@@ -7,7 +7,7 @@ public class Conta { //Atributos
 	
 	
 	//construtor
-	public Conta() {
+	public Conta(int agencia, int numero) {
 		
 	}
 	
