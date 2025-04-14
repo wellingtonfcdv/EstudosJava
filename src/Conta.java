@@ -11,10 +11,10 @@ public class Conta { //Atributos
 
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("Total de contas é " + total);
+		//System.out.println("Total de contas é " + total);
 		this.agencia = agencia;
 		this.numero = numero;
-		System.out.println("Estou criando uma nova conta..." + this.numero);
+		//System.out.println("Estou criando uma nova conta..." + this.numero);
 	}
 	
 	
@@ -35,8 +35,7 @@ public class Conta { //Atributos
 	}
 	
 	public boolean transfere(double valor, Conta destino) {
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
+		if(this.saca(valor)) {
 			destino.deposita(valor);
 			return true;
 		}
