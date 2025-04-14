@@ -1,6 +1,6 @@
 
-public class Conta { //Atributos
-	private double saldo;
+public abstract class Conta { //Atributos
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
@@ -19,9 +19,7 @@ public class Conta { //Atributos
 	
 	
 	//Comportamentos -> métodos
-	void deposita(double valor) {
-		this.saldo = this.saldo + valor;
-	}
+	public abstract void  deposita(double valor);
 	
 	
 
