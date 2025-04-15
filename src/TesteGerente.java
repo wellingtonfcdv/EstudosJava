@@ -7,6 +7,9 @@ public class TesteGerente {
 		g1.setCpf("223342513");
 		g1.setSalario(5000.0);
 		
+		Autenticavel referencia = new Cliente();
+		
+		
 		System.out.println(g1.getNome());
 		System.out.println(g1.getCpf());
 		System.out.println(g1.getSalario());
